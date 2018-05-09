@@ -7,22 +7,48 @@
 //
 
 #import "ViewController.h"
+#import "MainTableViewCell.h"
 
-@interface ViewController ()
-
+@interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
+@property(nonatomic,strong) UITableView *tableView;
+@property(nonatomic,copy) NSArray *pages;
 @end
 
 @implementation ViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+-(NSArray *)pages{
+    if (!_pages) {
+        _pages = @[];
+    }
+    return _pages;
 }
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    [self initTableView];
+}
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)initTableView{
+    UITableView *tableView = [[UITableView alloc]initWithFrame:[UIScreen mainScreen].bounds style:UITableViewStylePlain];
+    _tableView = tableView;
+    tableView.delegate = self;
+    tableView.dataSource = self;
+    [self.view addSubview:tableView];
+    [tableView registerClass:NSClassFromString(@"MainTableViewCell") forCellReuseIdentifier:@"main"];
+    
+}
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 10;
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 50;
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    MainTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"main"];
+    return cell;
 }
 
 
