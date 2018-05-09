@@ -15,6 +15,8 @@
 		96034C3420A321970045B8E2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 96034C3320A321970045B8E2 /* main.m */; };
 		96034C3E20A321970045B8E2 /* SDWebLearningTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 96034C3D20A321970045B8E2 /* SDWebLearningTests.m */; };
 		96034C4920A321970045B8E2 /* SDWebLearningUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 96034C4820A321970045B8E2 /* SDWebLearningUITests.m */; };
+		96034C5720A3316A0045B8E2 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 96034C5620A331690045B8E2 /* Podfile */; };
+		B6922C17E38CFFD6A18F2F86 /* libPods-SDWebLearning.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D71DDE4933CB62F934D0C3F0 /* libPods-SDWebLearning.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1654AED9400BA49D264ACCFE /* Pods-SDWebLearning.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDWebLearning.release.xcconfig"; path = "Pods/Target Support Files/Pods-SDWebLearning/Pods-SDWebLearning.release.xcconfig"; sourceTree = "<group>"; };
 		96034C2120A321970045B8E2 /* SDWebLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDWebLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96034C2420A321970045B8E2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		96034C2520A321970045B8E2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +54,9 @@
 		96034C4420A321970045B8E2 /* SDWebLearningUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SDWebLearningUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		96034C4820A321970045B8E2 /* SDWebLearningUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDWebLearningUITests.m; sourceTree = "<group>"; };
 		96034C4A20A321970045B8E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96034C5620A331690045B8E2 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		9CA372BE8F6F36A37873BCB5 /* Pods-SDWebLearning.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDWebLearning.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SDWebLearning/Pods-SDWebLearning.debug.xcconfig"; sourceTree = "<group>"; };
+		D71DDE4933CB62F934D0C3F0 /* libPods-SDWebLearning.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SDWebLearning.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6922C17E38CFFD6A18F2F86 /* libPods-SDWebLearning.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,13 +85,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		041C067E6BF90E8A19788FEE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9CA372BE8F6F36A37873BCB5 /* Pods-SDWebLearning.debug.xcconfig */,
+				1654AED9400BA49D264ACCFE /* Pods-SDWebLearning.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		597BA10297BC8DB5F46FB77F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D71DDE4933CB62F934D0C3F0 /* libPods-SDWebLearning.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		96034C1820A321970045B8E2 = {
 			isa = PBXGroup;
 			children = (
+				96034C5620A331690045B8E2 /* Podfile */,
 				96034C2320A321970045B8E2 /* SDWebLearning */,
 				96034C3C20A321970045B8E2 /* SDWebLearningTests */,
 				96034C4720A321970045B8E2 /* SDWebLearningUITests */,
 				96034C2220A321970045B8E2 /* Products */,
+				041C067E6BF90E8A19788FEE /* Pods */,
+				597BA10297BC8DB5F46FB77F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,9 +166,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 96034C4D20A321970045B8E2 /* Build configuration list for PBXNativeTarget "SDWebLearning" */;
 			buildPhases = (
+				34060EE16FCA58E8D3D1BFAD /* [CP] Check Pods Manifest.lock */,
 				96034C1D20A321970045B8E2 /* Sources */,
 				96034C1E20A321970045B8E2 /* Frameworks */,
 				96034C1F20A321970045B8E2 /* Resources */,
+				13A2ABAB240629ABAC909866 /* [CP] Embed Pods Frameworks */,
+				92D988C25C2105B39043B18C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -240,6 +270,7 @@
 			files = (
 				96034C3120A321970045B8E2 /* LaunchScreen.storyboard in Resources */,
 				96034C2E20A321970045B8E2 /* Assets.xcassets in Resources */,
+				96034C5720A3316A0045B8E2 /* Podfile in Resources */,
 				96034C2C20A321970045B8E2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,6 +290,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		13A2ABAB240629ABAC909866 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SDWebLearning/Pods-SDWebLearning-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		34060EE16FCA58E8D3D1BFAD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SDWebLearning-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92D988C25C2105B39043B18C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SDWebLearning/Pods-SDWebLearning-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		96034C1D20A321970045B8E2 /* Sources */ = {
@@ -428,11 +510,13 @@
 		};
 		96034C4E20A321970045B8E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CA372BE8F6F36A37873BCB5 /* Pods-SDWebLearning.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TQL6G72335;
 				INFOPLIST_FILE = SDWebLearning/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = peipei.SDWebLearning;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -442,11 +526,13 @@
 		};
 		96034C4F20A321970045B8E2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1654AED9400BA49D264ACCFE /* Pods-SDWebLearning.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TQL6G72335;
 				INFOPLIST_FILE = SDWebLearning/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = peipei.SDWebLearning;
 				PRODUCT_NAME = "$(TARGET_NAME)";
