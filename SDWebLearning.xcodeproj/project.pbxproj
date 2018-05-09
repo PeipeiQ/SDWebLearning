@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		96034C2620A321970045B8E2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 96034C2520A321970045B8E2 /* AppDelegate.m */; };
+		96034C2920A321970045B8E2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96034C2820A321970045B8E2 /* ViewController.m */; };
+		96034C2C20A321970045B8E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96034C2A20A321970045B8E2 /* Main.storyboard */; };
+		96034C2E20A321970045B8E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96034C2D20A321970045B8E2 /* Assets.xcassets */; };
+		96034C3120A321970045B8E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96034C2F20A321970045B8E2 /* LaunchScreen.storyboard */; };
+		96034C3420A321970045B8E2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 96034C3320A321970045B8E2 /* main.m */; };
+		96034C3E20A321970045B8E2 /* SDWebLearningTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 96034C3D20A321970045B8E2 /* SDWebLearningTests.m */; };
+		96034C4920A321970045B8E2 /* SDWebLearningUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 96034C4820A321970045B8E2 /* SDWebLearningUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		96034C3A20A321970045B8E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96034C1920A321970045B8E2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 96034C2020A321970045B8E2;
+			remoteInfo = SDWebLearning;
+		};
+		96034C4520A321970045B8E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96034C1920A321970045B8E2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 96034C2020A321970045B8E2;
+			remoteInfo = SDWebLearning;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		96034C2120A321970045B8E2 /* SDWebLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDWebLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		96034C2420A321970045B8E2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		96034C2520A321970045B8E2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		96034C2720A321970045B8E2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		96034C2820A321970045B8E2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		96034C2B20A321970045B8E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		96034C2D20A321970045B8E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		96034C3020A321970045B8E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		96034C3220A321970045B8E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96034C3320A321970045B8E2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		96034C3920A321970045B8E2 /* SDWebLearningTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SDWebLearningTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		96034C3D20A321970045B8E2 /* SDWebLearningTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDWebLearningTests.m; sourceTree = "<group>"; };
+		96034C3F20A321970045B8E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96034C4420A321970045B8E2 /* SDWebLearningUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SDWebLearningUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		96034C4820A321970045B8E2 /* SDWebLearningUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDWebLearningUITests.m; sourceTree = "<group>"; };
+		96034C4A20A321970045B8E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		96034C1E20A321970045B8E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96034C3620A321970045B8E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96034C4120A321970045B8E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		96034C1820A321970045B8E2 = {
+			isa = PBXGroup;
+			children = (
+				96034C2320A321970045B8E2 /* SDWebLearning */,
+				96034C3C20A321970045B8E2 /* SDWebLearningTests */,
+				96034C4720A321970045B8E2 /* SDWebLearningUITests */,
+				96034C2220A321970045B8E2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		96034C2220A321970045B8E2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				96034C2120A321970045B8E2 /* SDWebLearning.app */,
+				96034C3920A321970045B8E2 /* SDWebLearningTests.xctest */,
+				96034C4420A321970045B8E2 /* SDWebLearningUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		96034C2320A321970045B8E2 /* SDWebLearning */ = {
+			isa = PBXGroup;
+			children = (
+				96034C2420A321970045B8E2 /* AppDelegate.h */,
+				96034C2520A321970045B8E2 /* AppDelegate.m */,
+				96034C2720A321970045B8E2 /* ViewController.h */,
+				96034C2820A321970045B8E2 /* ViewController.m */,
+				96034C2A20A321970045B8E2 /* Main.storyboard */,
+				96034C2D20A321970045B8E2 /* Assets.xcassets */,
+				96034C2F20A321970045B8E2 /* LaunchScreen.storyboard */,
+				96034C3220A321970045B8E2 /* Info.plist */,
+				96034C3320A321970045B8E2 /* main.m */,
+			);
+			path = SDWebLearning;
+			sourceTree = "<group>";
+		};
+		96034C3C20A321970045B8E2 /* SDWebLearningTests */ = {
+			isa = PBXGroup;
+			children = (
+				96034C3D20A321970045B8E2 /* SDWebLearningTests.m */,
+				96034C3F20A321970045B8E2 /* Info.plist */,
+			);
+			path = SDWebLearningTests;
+			sourceTree = "<group>";
+		};
+		96034C4720A321970045B8E2 /* SDWebLearningUITests */ = {
+			isa = PBXGroup;
+			children = (
+				96034C4820A321970045B8E2 /* SDWebLearningUITests.m */,
+				96034C4A20A321970045B8E2 /* Info.plist */,
+			);
+			path = SDWebLearningUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		96034C2020A321970045B8E2 /* SDWebLearning */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96034C4D20A321970045B8E2 /* Build configuration list for PBXNativeTarget "SDWebLearning" */;
+			buildPhases = (
+				96034C1D20A321970045B8E2 /* Sources */,
+				96034C1E20A321970045B8E2 /* Frameworks */,
+				96034C1F20A321970045B8E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SDWebLearning;
+			productName = SDWebLearning;
+			productReference = 96034C2120A321970045B8E2 /* SDWebLearning.app */;
+			productType = "com.apple.product-type.application";
+		};
+		96034C3820A321970045B8E2 /* SDWebLearningTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96034C5020A321970045B8E2 /* Build configuration list for PBXNativeTarget "SDWebLearningTests" */;
+			buildPhases = (
+				96034C3520A321970045B8E2 /* Sources */,
+				96034C3620A321970045B8E2 /* Frameworks */,
+				96034C3720A321970045B8E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				96034C3B20A321970045B8E2 /* PBXTargetDependency */,
+			);
+			name = SDWebLearningTests;
+			productName = SDWebLearningTests;
+			productReference = 96034C3920A321970045B8E2 /* SDWebLearningTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		96034C4320A321970045B8E2 /* SDWebLearningUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96034C5320A321970045B8E2 /* Build configuration list for PBXNativeTarget "SDWebLearningUITests" */;
+			buildPhases = (
+				96034C4020A321970045B8E2 /* Sources */,
+				96034C4120A321970045B8E2 /* Frameworks */,
+				96034C4220A321970045B8E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				96034C4620A321970045B8E2 /* PBXTargetDependency */,
+			);
+			name = SDWebLearningUITests;
+			productName = SDWebLearningUITests;
+			productReference = 96034C4420A321970045B8E2 /* SDWebLearningUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		96034C1920A321970045B8E2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "沛沛";
+				TargetAttributes = {
+					96034C2020A321970045B8E2 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					96034C3820A321970045B8E2 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 96034C2020A321970045B8E2;
+					};
+					96034C4320A321970045B8E2 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 96034C2020A321970045B8E2;
+					};
+				};
+			};
+			buildConfigurationList = 96034C1C20A321970045B8E2 /* Build configuration list for PBXProject "SDWebLearning" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 96034C1820A321970045B8E2;
+			productRefGroup = 96034C2220A321970045B8E2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				96034C2020A321970045B8E2 /* SDWebLearning */,
+				96034C3820A321970045B8E2 /* SDWebLearningTests */,
+				96034C4320A321970045B8E2 /* SDWebLearningUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		96034C1F20A321970045B8E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96034C3120A321970045B8E2 /* LaunchScreen.storyboard in Resources */,
+				96034C2E20A321970045B8E2 /* Assets.xcassets in Resources */,
+				96034C2C20A321970045B8E2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96034C3720A321970045B8E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96034C4220A321970045B8E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		96034C1D20A321970045B8E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96034C2920A321970045B8E2 /* ViewController.m in Sources */,
+				96034C3420A321970045B8E2 /* main.m in Sources */,
+				96034C2620A321970045B8E2 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96034C3520A321970045B8E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96034C3E20A321970045B8E2 /* SDWebLearningTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96034C4020A321970045B8E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96034C4920A321970045B8E2 /* SDWebLearningUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		96034C3B20A321970045B8E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 96034C2020A321970045B8E2 /* SDWebLearning */;
+			targetProxy = 96034C3A20A321970045B8E2 /* PBXContainerItemProxy */;
+		};
+		96034C4620A321970045B8E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 96034C2020A321970045B8E2 /* SDWebLearning */;
+			targetProxy = 96034C4520A321970045B8E2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		96034C2A20A321970045B8E2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96034C2B20A321970045B8E2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		96034C2F20A321970045B8E2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96034C3020A321970045B8E2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		96034C4B20A321970045B8E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		96034C4C20A321970045B8E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		96034C4E20A321970045B8E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TQL6G72335;
+				INFOPLIST_FILE = SDWebLearning/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = peipei.SDWebLearning;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		96034C4F20A321970045B8E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TQL6G72335;
+				INFOPLIST_FILE = SDWebLearning/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = peipei.SDWebLearning;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		96034C5120A321970045B8E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TQL6G72335;
+				INFOPLIST_FILE = SDWebLearningTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = peipei.SDWebLearningTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SDWebLearning.app/SDWebLearning";
+			};
+			name = Debug;
+		};
+		96034C5220A321970045B8E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TQL6G72335;
+				INFOPLIST_FILE = SDWebLearningTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = peipei.SDWebLearningTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SDWebLearning.app/SDWebLearning";
+			};
+			name = Release;
+		};
+		96034C5420A321970045B8E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TQL6G72335;
+				INFOPLIST_FILE = SDWebLearningUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = peipei.SDWebLearningUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SDWebLearning;
+			};
+			name = Debug;
+		};
+		96034C5520A321970045B8E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TQL6G72335;
+				INFOPLIST_FILE = SDWebLearningUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = peipei.SDWebLearningUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SDWebLearning;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		96034C1C20A321970045B8E2 /* Build configuration list for PBXProject "SDWebLearning" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96034C4B20A321970045B8E2 /* Debug */,
+				96034C4C20A321970045B8E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96034C4D20A321970045B8E2 /* Build configuration list for PBXNativeTarget "SDWebLearning" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96034C4E20A321970045B8E2 /* Debug */,
+				96034C4F20A321970045B8E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96034C5020A321970045B8E2 /* Build configuration list for PBXNativeTarget "SDWebLearningTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96034C5120A321970045B8E2 /* Debug */,
+				96034C5220A321970045B8E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96034C5320A321970045B8E2 /* Build configuration list for PBXNativeTarget "SDWebLearningUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96034C5420A321970045B8E2 /* Debug */,
+				96034C5520A321970045B8E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 96034C1920A321970045B8E2 /* Project object */;
+}
