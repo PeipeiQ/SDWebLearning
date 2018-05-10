@@ -10,6 +10,7 @@
 		7873ED3120A3F2C600335DD8 /* OperationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7873ED3020A3F2C600335DD8 /* OperationController.m */; };
 		7873ED3420A3F2DB00335DD8 /* NetWorkController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7873ED3320A3F2DB00335DD8 /* NetWorkController.m */; };
 		7873ED3720A3F32700335DD8 /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7873ED3620A3F32700335DD8 /* NotificationController.m */; };
+		7873ED3A20A4332B00335DD8 /* PPOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7873ED3920A4332B00335DD8 /* PPOperation.m */; };
 		96034C2620A321970045B8E2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 96034C2520A321970045B8E2 /* AppDelegate.m */; };
 		96034C2920A321970045B8E2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96034C2820A321970045B8E2 /* ViewController.m */; };
 		96034C2C20A321970045B8E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96034C2A20A321970045B8E2 /* Main.storyboard */; };
@@ -48,6 +49,8 @@
 		7873ED3320A3F2DB00335DD8 /* NetWorkController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetWorkController.m; sourceTree = "<group>"; };
 		7873ED3520A3F32700335DD8 /* NotificationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationController.h; sourceTree = "<group>"; };
 		7873ED3620A3F32700335DD8 /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
+		7873ED3820A4332B00335DD8 /* PPOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPOperation.h; sourceTree = "<group>"; };
+		7873ED3920A4332B00335DD8 /* PPOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPOperation.m; sourceTree = "<group>"; };
 		96034C2120A321970045B8E2 /* SDWebLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDWebLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96034C2420A321970045B8E2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		96034C2520A321970045B8E2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -202,6 +205,8 @@
 		96034C5E20A34A650045B8E2 /* utils */ = {
 			isa = PBXGroup;
 			children = (
+				7873ED3820A4332B00335DD8 /* PPOperation.h */,
+				7873ED3920A4332B00335DD8 /* PPOperation.m */,
 				96034C6220A34B3E0045B8E2 /* Constants.h */,
 			);
 			path = utils;
@@ -396,6 +401,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7873ED3120A3F2C600335DD8 /* OperationController.m in Sources */,
+				7873ED3A20A4332B00335DD8 /* PPOperation.m in Sources */,
 				96034C2920A321970045B8E2 /* ViewController.m in Sources */,
 				7873ED3720A3F32700335DD8 /* NotificationController.m in Sources */,
 				7873ED3420A3F2DB00335DD8 /* NetWorkController.m in Sources */,
@@ -566,7 +572,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TQL6G72335;
+				DEVELOPMENT_TEAM = 8USF88UFL4;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/SDWebLearning/PrefixHeader.pch";
 				INFOPLIST_FILE = SDWebLearning/Info.plist;
@@ -584,7 +590,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TQL6G72335;
+				DEVELOPMENT_TEAM = 8USF88UFL4;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/SDWebLearning/PrefixHeader.pch";
 				INFOPLIST_FILE = SDWebLearning/Info.plist;

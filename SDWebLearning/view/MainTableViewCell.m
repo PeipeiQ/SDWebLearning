@@ -8,7 +8,7 @@
 
 #import "MainTableViewCell.h"
 @interface MainTableViewCell()
-
+@property(nonatomic,strong) UILabel *label;
 @end
 
 @implementation MainTableViewCell
@@ -16,13 +16,19 @@
 -(instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
         [self showCell];
+        self.selectionStyle = UITableViewCellSelectionStyleNone;
     }
     return self;
 }
 
 -(void)showCell{
-    UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(30, 50,kScreenWidth , 50)];
+    UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(30, 0,kScreenWidth-30 , 50)];
+    _label = label;
     [self addSubview:label];
+}
+
+-(void)setPage:(NSString *)page{
+    _label.text = page;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
