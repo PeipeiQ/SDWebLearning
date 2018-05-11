@@ -29,7 +29,7 @@
     btn1.backgroundColor = [UIColor redColor];
     [btn1 setTitle:@"展示dispatch_barrier_async" forState:UIControlStateNormal];
     [btn1 addTarget:self action:@selector(gcdDemo:) forControlEvents:UIControlEventTouchUpInside];
-
+    
     UIButton *btn3 = [[UIButton alloc]initWithFrame:CGRectMake(30, 160, 320, 24)];
     btn3.backgroundColor = [UIColor purpleColor];
     [btn3 setTitle:@"展示系统operation" forState:UIControlStateNormal];
@@ -52,6 +52,7 @@
     [self.view addSubview:btn5];
 
 }
+
 
 //gcd一些高级用法
 -(void)gcdDemo:(UIButton *)sender{
@@ -136,8 +137,6 @@
         NSLog(@"这是第二个异步任务%@",[NSThread currentThread]);
     }];
     NSLog(@"主线任务");
-    
-    
 }
 
 -(void)myOperation{
@@ -147,6 +146,10 @@
     _operation = op;
     NSOperationQueue *queue = [[NSOperationQueue alloc]init];
     [queue addOperation:op];
+    
+    //添加对这两个属性的监听
+    [_operation addObserver:self forKeyPath:@"isFinished" options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld context:nil];
+    [_operation addObserver:self forKeyPath:@"isExecuting" options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld context:nil];
 }
 
 -(void)operationTap{
@@ -159,7 +162,14 @@
 
 -(void)cancelOperation{
     [_operation cancel];
-    
+}
+
+//通过kvo来观察线程是否完成或者正在执行
+-(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context{
+    NSLog(@"keypath:%@",keyPath);
+    NSLog(@"object:%@",object);
+    NSLog(@"change:%@",change);
+    NSLog(@"context:%@",context);
 }
 
 

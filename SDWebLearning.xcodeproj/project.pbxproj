@@ -11,6 +11,7 @@
 		7873ED3420A3F2DB00335DD8 /* NetWorkController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7873ED3320A3F2DB00335DD8 /* NetWorkController.m */; };
 		7873ED3720A3F32700335DD8 /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7873ED3620A3F32700335DD8 /* NotificationController.m */; };
 		7873ED3A20A4332B00335DD8 /* PPOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7873ED3920A4332B00335DD8 /* PPOperation.m */; };
+		7873ED3D20A56D3800335DD8 /* NotiView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7873ED3C20A56D3800335DD8 /* NotiView.m */; };
 		96034C2620A321970045B8E2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 96034C2520A321970045B8E2 /* AppDelegate.m */; };
 		96034C2920A321970045B8E2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96034C2820A321970045B8E2 /* ViewController.m */; };
 		96034C2C20A321970045B8E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96034C2A20A321970045B8E2 /* Main.storyboard */; };
@@ -51,6 +52,8 @@
 		7873ED3620A3F32700335DD8 /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
 		7873ED3820A4332B00335DD8 /* PPOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPOperation.h; sourceTree = "<group>"; };
 		7873ED3920A4332B00335DD8 /* PPOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPOperation.m; sourceTree = "<group>"; };
+		7873ED3B20A56D3800335DD8 /* NotiView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotiView.h; sourceTree = "<group>"; };
+		7873ED3C20A56D3800335DD8 /* NotiView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotiView.m; sourceTree = "<group>"; };
 		96034C2120A321970045B8E2 /* SDWebLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDWebLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96034C2420A321970045B8E2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		96034C2520A321970045B8E2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -198,6 +201,8 @@
 			children = (
 				96034C5A20A341100045B8E2 /* MainTableViewCell.h */,
 				96034C5B20A341100045B8E2 /* MainTableViewCell.m */,
+				7873ED3B20A56D3800335DD8 /* NotiView.h */,
+				7873ED3C20A56D3800335DD8 /* NotiView.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -401,6 +406,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7873ED3120A3F2C600335DD8 /* OperationController.m in Sources */,
+				7873ED3D20A56D3800335DD8 /* NotiView.m in Sources */,
 				7873ED3A20A4332B00335DD8 /* PPOperation.m in Sources */,
 				96034C2920A321970045B8E2 /* ViewController.m in Sources */,
 				7873ED3720A3F32700335DD8 /* NotificationController.m in Sources */,
@@ -576,7 +582,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/SDWebLearning/PrefixHeader.pch";
 				INFOPLIST_FILE = SDWebLearning/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = peipei.SDWebLearning;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -594,7 +600,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/SDWebLearning/PrefixHeader.pch";
 				INFOPLIST_FILE = SDWebLearning/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = peipei.SDWebLearning;
 				PRODUCT_NAME = "$(TARGET_NAME)";

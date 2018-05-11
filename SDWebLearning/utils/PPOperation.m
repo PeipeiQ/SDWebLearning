@@ -29,6 +29,8 @@
     if(self = [super init]){
         target = atarget;
         selector = aselector;
+        _executing = NO;
+        _finished = YES;
     }
     return self;
 }
@@ -41,17 +43,20 @@
     if ([self isCancelled]) {
         return;
     }
+    _executing = YES;
+    _finished = NO;
     NSLog(@"这是一个异步任务");
     for (int i=0; i<10; i++) {
         if ([self isCancelled]) {
-            self.finished = YES;
-            self.executing = NO;
+            _finished = YES;
+            _executing = NO;
             break;
         }
         [NSThread sleepForTimeInterval:1];
+        NSLog(@"是否取消任务%d__%@",[self isCancelled],[NSThread currentThread]);
         if (i==9) {
-            self.finished = YES;
-            self.executing = NO;
+            _finished = YES;
+            _executing = NO;
         }
     }
 }
