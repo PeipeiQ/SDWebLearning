@@ -9,6 +9,7 @@
 #import "RuntimeController.h"
 #import <objc/runtime.h>
 #import "BaseModel.h"
+#import "NSObject+DicToModel.h"
 
 @interface RuntimeController ()
 @property(nonatomic,copy) NSDictionary *dataDic;
@@ -35,10 +36,12 @@
     [self getPropertyByRuntimeWith:NSClassFromString(@"FirstModel")];
     [self getIVarByRuntimeWith:NSClassFromString(@"FirstModel")];
     FirstModel *model = [[FirstModel alloc]init];
-    model = (FirstModel*)[self getModelByKVC:self.dataDic];
-    NSLog(@"%@,%@,%@",model.name,model.cars,model.age);
+    model = [FirstModel getModelByKVC:self.dataDic];
+    //model = [FirstModel objcWithDict:self.dataDic mapDict:@{@"ID":@"id"}];
+    NSLog(@"%@,%@,%@,%@",model.name,model.cars,model.age,model.ID);
 }
 
+//runtime应用一：字典转模型
 -(void)getPropertyByRuntimeWith:(Class)desClass{
     unsigned int count;
     //属性
@@ -81,12 +84,9 @@
     }
 }
 
-//利用kvc的字典转模型
--(NSObject*)getModelByKVC:(NSDictionary*)dic{
-    NSObject *model = [[NSObject alloc]init];
-    [model setValuesForKeysWithDictionary:dic];
-    return model;
-}
+//runtime运用2，动态新增方法
+//runtime运用3，方法交换
+//runtime运用4，对象关联
 
 
 

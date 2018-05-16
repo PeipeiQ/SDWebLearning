@@ -24,6 +24,7 @@
 		96034C4920A321970045B8E2 /* SDWebLearningUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 96034C4820A321970045B8E2 /* SDWebLearningUITests.m */; };
 		96034C5720A3316A0045B8E2 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 96034C5620A331690045B8E2 /* Podfile */; };
 		96034C5C20A341100045B8E2 /* MainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 96034C5B20A341100045B8E2 /* MainTableViewCell.m */; };
+		96034C6520ABE7E00045B8E2 /* NSObject+DicToModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 96034C6420ABE7E00045B8E2 /* NSObject+DicToModel.m */; };
 		B6922C17E38CFFD6A18F2F86 /* libPods-SDWebLearning.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D71DDE4933CB62F934D0C3F0 /* libPods-SDWebLearning.a */; };
 /* End PBXBuildFile section */
 
@@ -81,6 +82,8 @@
 		96034C5B20A341100045B8E2 /* MainTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainTableViewCell.m; sourceTree = "<group>"; };
 		96034C5D20A349AB0045B8E2 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		96034C6220A34B3E0045B8E2 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		96034C6320ABE7E00045B8E2 /* NSObject+DicToModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+DicToModel.h"; sourceTree = "<group>"; };
+		96034C6420ABE7E00045B8E2 /* NSObject+DicToModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DicToModel.m"; sourceTree = "<group>"; };
 		9CA372BE8F6F36A37873BCB5 /* Pods-SDWebLearning.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDWebLearning.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SDWebLearning/Pods-SDWebLearning.debug.xcconfig"; sourceTree = "<group>"; };
 		D71DDE4933CB62F934D0C3F0 /* libPods-SDWebLearning.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SDWebLearning.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -231,6 +234,8 @@
 				7873ED3820A4332B00335DD8 /* PPOperation.h */,
 				7873ED3920A4332B00335DD8 /* PPOperation.m */,
 				96034C6220A34B3E0045B8E2 /* Constants.h */,
+				96034C6320ABE7E00045B8E2 /* NSObject+DicToModel.h */,
+				96034C6420ABE7E00045B8E2 /* NSObject+DicToModel.m */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -434,6 +439,7 @@
 				96034C3420A321970045B8E2 /* main.m in Sources */,
 				96034C5C20A341100045B8E2 /* MainTableViewCell.m in Sources */,
 				96034C2620A321970045B8E2 /* AppDelegate.m in Sources */,
+				96034C6520ABE7E00045B8E2 /* NSObject+DicToModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
