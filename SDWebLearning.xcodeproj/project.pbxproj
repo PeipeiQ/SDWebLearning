@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		780EEED820B53FA500C81BA0 /* TextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 780EEED720B53FA500C81BA0 /* TextView.m */; };
+		780EEEDA20B54DBA00C81BA0 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 780EEED920B54DBA00C81BA0 /* libsqlite3.tbd */; };
 		7873ED3120A3F2C600335DD8 /* OperationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7873ED3020A3F2C600335DD8 /* OperationController.m */; };
 		7873ED3420A3F2DB00335DD8 /* NetWorkController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7873ED3320A3F2DB00335DD8 /* NetWorkController.m */; };
 		7873ED3720A3F32700335DD8 /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7873ED3620A3F32700335DD8 /* NotificationController.m */; };
@@ -14,6 +16,7 @@
 		7873ED3D20A56D3800335DD8 /* NotiView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7873ED3C20A56D3800335DD8 /* NotiView.m */; };
 		7873ED4920A9337A00335DD8 /* RuntimeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7873ED4820A9337A00335DD8 /* RuntimeController.m */; };
 		7873ED4D20A9364600335DD8 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7873ED4C20A9364600335DD8 /* BaseModel.m */; };
+		7873ED5020B2950400335DD8 /* DBController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7873ED4F20B2950400335DD8 /* DBController.m */; };
 		96034C2620A321970045B8E2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 96034C2520A321970045B8E2 /* AppDelegate.m */; };
 		96034C2920A321970045B8E2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96034C2820A321970045B8E2 /* ViewController.m */; };
 		96034C2C20A321970045B8E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96034C2A20A321970045B8E2 /* Main.storyboard */; };
@@ -46,6 +49,9 @@
 
 /* Begin PBXFileReference section */
 		1654AED9400BA49D264ACCFE /* Pods-SDWebLearning.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDWebLearning.release.xcconfig"; path = "Pods/Target Support Files/Pods-SDWebLearning/Pods-SDWebLearning.release.xcconfig"; sourceTree = "<group>"; };
+		780EEED620B53FA500C81BA0 /* TextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextView.h; sourceTree = "<group>"; };
+		780EEED720B53FA500C81BA0 /* TextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextView.m; sourceTree = "<group>"; };
+		780EEED920B54DBA00C81BA0 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		7873ED2F20A3F2C600335DD8 /* OperationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OperationController.h; sourceTree = "<group>"; };
 		7873ED3020A3F2C600335DD8 /* OperationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OperationController.m; sourceTree = "<group>"; };
 		7873ED3220A3F2DB00335DD8 /* NetWorkController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetWorkController.h; sourceTree = "<group>"; };
@@ -60,6 +66,8 @@
 		7873ED4820A9337A00335DD8 /* RuntimeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeController.m; sourceTree = "<group>"; };
 		7873ED4B20A9364600335DD8 /* BaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
 		7873ED4C20A9364600335DD8 /* BaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
+		7873ED4E20B2950400335DD8 /* DBController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBController.h; sourceTree = "<group>"; };
+		7873ED4F20B2950400335DD8 /* DBController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBController.m; sourceTree = "<group>"; };
 		96034C2120A321970045B8E2 /* SDWebLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDWebLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96034C2420A321970045B8E2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		96034C2520A321970045B8E2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -90,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				780EEEDA20B54DBA00C81BA0 /* libsqlite3.tbd in Frameworks */,
 				B6922C17E38CFFD6A18F2F86 /* libPods-SDWebLearning.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -123,6 +132,7 @@
 		597BA10297BC8DB5F46FB77F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				780EEED920B54DBA00C81BA0 /* libsqlite3.tbd */,
 				D71DDE4933CB62F934D0C3F0 /* libPods-SDWebLearning.a */,
 			);
 			name = Frameworks;
@@ -139,6 +149,8 @@
 				7873ED3620A3F32700335DD8 /* NotificationController.m */,
 				7873ED4720A9337A00335DD8 /* RuntimeController.h */,
 				7873ED4820A9337A00335DD8 /* RuntimeController.m */,
+				7873ED4E20B2950400335DD8 /* DBController.h */,
+				7873ED4F20B2950400335DD8 /* DBController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -221,6 +233,8 @@
 				96034C5B20A341100045B8E2 /* MainTableViewCell.m */,
 				7873ED3B20A56D3800335DD8 /* NotiView.h */,
 				7873ED3C20A56D3800335DD8 /* NotiView.m */,
+				780EEED620B53FA500C81BA0 /* TextView.h */,
+				780EEED720B53FA500C81BA0 /* TextView.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -432,8 +446,10 @@
 				7873ED3420A3F2DB00335DD8 /* NetWorkController.m in Sources */,
 				7873ED4920A9337A00335DD8 /* RuntimeController.m in Sources */,
 				96034C3420A321970045B8E2 /* main.m in Sources */,
+				780EEED820B53FA500C81BA0 /* TextView.m in Sources */,
 				96034C5C20A341100045B8E2 /* MainTableViewCell.m in Sources */,
 				96034C2620A321970045B8E2 /* AppDelegate.m in Sources */,
+				7873ED5020B2950400335DD8 /* DBController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
