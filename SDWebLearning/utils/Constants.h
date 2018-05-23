@@ -31,4 +31,16 @@
 /** 分割线高度 */
 #define kSpliteHeight 0.5
 
+/*-------------------- 屏幕适配 -----------------------------*/
+#define BaseUrl @"http://localhost"
+
+
+
+
+
+
+
+
+
+
 #endif /* Constants_h */
