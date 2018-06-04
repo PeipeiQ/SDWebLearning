@@ -11,5 +11,6 @@
 
 @interface TextView : UIView
 @property(nonatomic,copy) NSString *contentText;
+@property(nonatomic,strong) UITextField *textField;
 -(instancetype)initWithFrame:(CGRect)frame title:(NSString*)title;
 @end
