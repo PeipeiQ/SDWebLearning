@@ -28,3 +28,11 @@
     NSLog(@"value:%@,key%@",value,key);
 }
 @end
+
+@implementation FriendCircleItemModel
+
+@end
+
+@implementation FriendCircleModel
+
+@end

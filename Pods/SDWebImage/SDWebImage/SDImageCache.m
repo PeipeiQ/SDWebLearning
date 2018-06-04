@@ -254,6 +254,7 @@ FOUNDATION_STATIC_INLINE NSUInteger SDCacheCostForImage(UIImage *image) {
     NSURL *fileURL = [NSURL fileURLWithPath:cachePathForKey];
     
     [_fileManager createFileAtPath:cachePathForKey contents:imageData attributes:nil];
+    NSLog(@"图片在硬盘位置%@",cachePathForKey);
     
     // disable iCloud backup
     if (self.config.shouldDisableiCloud) {

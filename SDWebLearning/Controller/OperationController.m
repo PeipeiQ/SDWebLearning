@@ -19,27 +19,27 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    UIButton *btn0 = [[UIButton alloc]initWithFrame:CGRectMake(30, 80, 320, 24)];
+    UIButton *btn0 = [[UIButton alloc]initWithFrame:CGRectMake(30, kStatusBarAndNavigationBarHeight+30, 320, 24)];
     btn0.tag = 0;
     btn0.backgroundColor = [UIColor blueColor];
     [btn0 setTitle:@"展示dispatch_barrier_sync" forState:UIControlStateNormal];
     [btn0 addTarget:self action:@selector(gcdDemo:) forControlEvents:UIControlEventTouchUpInside];
-    UIButton *btn1 = [[UIButton alloc]initWithFrame:CGRectMake(30, 120, 320, 24)];
+    UIButton *btn1 = [[UIButton alloc]initWithFrame:CGRectMake(30, kStatusBarAndNavigationBarHeight+70, 320, 24)];
     btn1.tag = 1;
     btn1.backgroundColor = [UIColor redColor];
     [btn1 setTitle:@"展示dispatch_barrier_async" forState:UIControlStateNormal];
     [btn1 addTarget:self action:@selector(gcdDemo:) forControlEvents:UIControlEventTouchUpInside];
     
-    UIButton *btn3 = [[UIButton alloc]initWithFrame:CGRectMake(30, 160, 320, 24)];
+    UIButton *btn3 = [[UIButton alloc]initWithFrame:CGRectMake(30, kStatusBarAndNavigationBarHeight+110, 320, 24)];
     btn3.backgroundColor = [UIColor purpleColor];
     [btn3 setTitle:@"展示系统operation" forState:UIControlStateNormal];
     [btn3 addTarget:self action:@selector(operationDemo) forControlEvents:UIControlEventTouchUpInside];
-    UIButton *btn4 = [[UIButton alloc]initWithFrame:CGRectMake(30, 200, 320, 24)];
+    UIButton *btn4 = [[UIButton alloc]initWithFrame:CGRectMake(30, kStatusBarAndNavigationBarHeight+150, 320, 24)];
     btn4.backgroundColor = [UIColor darkGrayColor];
     [btn4 setTitle:@"展示自定义的operation" forState:UIControlStateNormal];
     [btn4 addTarget:self action:@selector(myOperation) forControlEvents:UIControlEventTouchUpInside];
     
-    UIButton *btn5 = [[UIButton alloc]initWithFrame:CGRectMake(30, 240, 320, 24)];
+    UIButton *btn5 = [[UIButton alloc]initWithFrame:CGRectMake(30, kStatusBarAndNavigationBarHeight+190, 320, 24)];
     btn5.backgroundColor = [UIColor orangeColor];
     [btn5 setTitle:@"取消operation" forState:UIControlStateNormal];
     [btn5 addTarget:self action:@selector(cancelOperation) forControlEvents:UIControlEventTouchUpInside];

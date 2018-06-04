@@ -18,7 +18,7 @@
 
 -(NSArray *)pages{
     if (!_pages) {
-        _pages = @[@"OperationController",@"NetWorkController",@"NotificationController",@"RuntimeController",@"DBController"];
+        _pages = @[@"OperationController",@"NetWorkController",@"NotificationController",@"RuntimeController",@"DBController",@"FriendCircleController"];
     }
     return _pages;
 }

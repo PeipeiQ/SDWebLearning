@@ -27,7 +27,12 @@
 		96034C4920A321970045B8E2 /* SDWebLearningUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 96034C4820A321970045B8E2 /* SDWebLearningUITests.m */; };
 		96034C5720A3316A0045B8E2 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 96034C5620A331690045B8E2 /* Podfile */; };
 		96034C5C20A341100045B8E2 /* MainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 96034C5B20A341100045B8E2 /* MainTableViewCell.m */; };
-		96034C6520ABE7E00045B8E2 /* NSObject+DicToModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 96034C6420ABE7E00045B8E2 /* NSObject+DicToModel.m */; };
+		967BEAF520BBC36800089003 /* NSObject+DicToModels.m in Sources */ = {isa = PBXBuildFile; fileRef = 967BEAF420BBC36800089003 /* NSObject+DicToModels.m */; };
+		967BEAF820BC2CFF00089003 /* FriendCircleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 967BEAF720BC2CFF00089003 /* FriendCircleController.m */; };
+		967BEAFB20BC2DF800089003 /* PPNaviView.m in Sources */ = {isa = PBXBuildFile; fileRef = 967BEAFA20BC2DF800089003 /* PPNaviView.m */; };
+		967BEAFE20BC311B00089003 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 967BEAFD20BC311B00089003 /* UIColor+Hex.m */; };
+		967BEB0120BDAA2E00089003 /* FriendCircleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 967BEB0020BDAA2E00089003 /* FriendCircleTableViewCell.m */; };
+		96C2F20D20BEEF11003C7872 /* NetworkUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C2F20C20BEEF11003C7872 /* NetworkUtil.m */; };
 		B6922C17E38CFFD6A18F2F86 /* libPods-SDWebLearning.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D71DDE4933CB62F934D0C3F0 /* libPods-SDWebLearning.a */; };
 /* End PBXBuildFile section */
 
@@ -90,8 +95,18 @@
 		96034C5B20A341100045B8E2 /* MainTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainTableViewCell.m; sourceTree = "<group>"; };
 		96034C5D20A349AB0045B8E2 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		96034C6220A34B3E0045B8E2 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
-		96034C6320ABE7E00045B8E2 /* NSObject+DicToModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+DicToModel.h"; sourceTree = "<group>"; };
-		96034C6420ABE7E00045B8E2 /* NSObject+DicToModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DicToModel.m"; sourceTree = "<group>"; };
+		967BEAF320BBC36800089003 /* NSObject+DicToModels.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+DicToModels.h"; sourceTree = "<group>"; };
+		967BEAF420BBC36800089003 /* NSObject+DicToModels.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DicToModels.m"; sourceTree = "<group>"; };
+		967BEAF620BC2CFF00089003 /* FriendCircleController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FriendCircleController.h; sourceTree = "<group>"; };
+		967BEAF720BC2CFF00089003 /* FriendCircleController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FriendCircleController.m; sourceTree = "<group>"; };
+		967BEAF920BC2DF800089003 /* PPNaviView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPNaviView.h; sourceTree = "<group>"; };
+		967BEAFA20BC2DF800089003 /* PPNaviView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPNaviView.m; sourceTree = "<group>"; };
+		967BEAFC20BC311B00089003 /* UIColor+Hex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
+		967BEAFD20BC311B00089003 /* UIColor+Hex.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
+		967BEAFF20BDAA2E00089003 /* FriendCircleTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FriendCircleTableViewCell.h; sourceTree = "<group>"; };
+		967BEB0020BDAA2E00089003 /* FriendCircleTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FriendCircleTableViewCell.m; sourceTree = "<group>"; };
+		96C2F20B20BEEF11003C7872 /* NetworkUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkUtil.h; sourceTree = "<group>"; };
+		96C2F20C20BEEF11003C7872 /* NetworkUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkUtil.m; sourceTree = "<group>"; };
 		9CA372BE8F6F36A37873BCB5 /* Pods-SDWebLearning.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDWebLearning.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SDWebLearning/Pods-SDWebLearning.debug.xcconfig"; sourceTree = "<group>"; };
 		D71DDE4933CB62F934D0C3F0 /* libPods-SDWebLearning.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SDWebLearning.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -154,6 +169,8 @@
 				7873ED4820A9337A00335DD8 /* RuntimeController.m */,
 				7873ED4E20B2950400335DD8 /* DBController.h */,
 				7873ED4F20B2950400335DD8 /* DBController.m */,
+				967BEAF620BC2CFF00089003 /* FriendCircleController.h */,
+				967BEAF720BC2CFF00089003 /* FriendCircleController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -238,6 +255,10 @@
 				7873ED3C20A56D3800335DD8 /* NotiView.m */,
 				780EEED620B53FA500C81BA0 /* TextView.h */,
 				780EEED720B53FA500C81BA0 /* TextView.m */,
+				967BEAF920BC2DF800089003 /* PPNaviView.h */,
+				967BEAFA20BC2DF800089003 /* PPNaviView.m */,
+				967BEAFF20BDAA2E00089003 /* FriendCircleTableViewCell.h */,
+				967BEB0020BDAA2E00089003 /* FriendCircleTableViewCell.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -248,8 +269,12 @@
 				7873ED3820A4332B00335DD8 /* PPOperation.h */,
 				7873ED3920A4332B00335DD8 /* PPOperation.m */,
 				96034C6220A34B3E0045B8E2 /* Constants.h */,
-				96034C6320ABE7E00045B8E2 /* NSObject+DicToModel.h */,
-				96034C6420ABE7E00045B8E2 /* NSObject+DicToModel.m */,
+				967BEAF320BBC36800089003 /* NSObject+DicToModels.h */,
+				967BEAF420BBC36800089003 /* NSObject+DicToModels.m */,
+				967BEAFC20BC311B00089003 /* UIColor+Hex.h */,
+				967BEAFD20BC311B00089003 /* UIColor+Hex.m */,
+				96C2F20B20BEEF11003C7872 /* NetworkUtil.h */,
+				96C2F20C20BEEF11003C7872 /* NetworkUtil.m */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -442,23 +467,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				967BEAFB20BC2DF800089003 /* PPNaviView.m in Sources */,
+				967BEAFE20BC311B00089003 /* UIColor+Hex.m in Sources */,
 				7873ED3120A3F2C600335DD8 /* OperationController.m in Sources */,
 				7873ED3D20A56D3800335DD8 /* NotiView.m in Sources */,
 				7873ED3A20A4332B00335DD8 /* PPOperation.m in Sources */,
 				7873ED4D20A9364600335DD8 /* BaseModel.m in Sources */,
+				96C2F20D20BEEF11003C7872 /* NetworkUtil.m in Sources */,
 				96034C2920A321970045B8E2 /* ViewController.m in Sources */,
+				967BEAF820BC2CFF00089003 /* FriendCircleController.m in Sources */,
 				7873ED3720A3F32700335DD8 /* NotificationController.m in Sources */,
 				7873ED3420A3F2DB00335DD8 /* NetWorkController.m in Sources */,
+				967BEAF520BBC36800089003 /* NSObject+DicToModels.m in Sources */,
 				7873ED4920A9337A00335DD8 /* RuntimeController.m in Sources */,
 				96034C3420A321970045B8E2 /* main.m in Sources */,
 				780EEED820B53FA500C81BA0 /* TextView.m in Sources */,
 				96034C5C20A341100045B8E2 /* MainTableViewCell.m in Sources */,
+				967BEB0120BDAA2E00089003 /* FriendCircleTableViewCell.m in Sources */,
 				96034C2620A321970045B8E2 /* AppDelegate.m in Sources */,
-
 				7873ED5020B2950400335DD8 /* DBController.m in Sources */,
-
-				
-
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

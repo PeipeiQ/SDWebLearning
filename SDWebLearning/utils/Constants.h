@@ -18,20 +18,34 @@
 #define kScreen_H_Scale (kScreenHeight*1.0/667)
 /** 宽度比例 */
 #define kScreen_W_Scale (kScreenWidth/375)
-/** 导航高度 */
-#define kNavBarHeight 44
-/** tabBar高度 */
-#define kTabBarHeight 49
+
 /** TabBaritem 宽度 */
 #define kItemWidth kScreenWidth/5
-/** 状态栏高度 */
-#define kStatusBarHeight 20
+
 /** 导航加状态栏高度 */
 #define kNavBar_StatusBarHeight 64
 /** 分割线高度 */
 #define kSpliteHeight 0.5
 
-/*-------------------- 屏幕适配 -----------------------------*/
+/** 状态栏高度 */
+#define kStatusBarHeight (IS_iPhoneX ? 44.f : 20.f)
+
+/** 导航栏高度 */
+#define kNavigationBarHeight  44.f
+
+/** tabBar高度 */
+#define kTabbarHeight (IS_iPhoneX ? (49.f+34.f) : 49.f)
+
+// Tabbar safe bottom margin.
+#define kTabbarSafeBottomMargin        (IS_iPhoneX ? 34.f : 0.f)
+
+// Status bar & navigation bar height.
+#define kStatusBarAndNavigationBarHeight  (IS_iPhoneX ? 88.f : 64.f)
+
+//判断是否iPhone X
+#define IS_iPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
+
+/*-------------------- 网络 -----------------------------*/
 #define BaseUrl @"http://localhost"
 
 

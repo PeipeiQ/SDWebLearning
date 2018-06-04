@@ -1,15 +1,15 @@
 //
-//  NSObject+DicToModel.m
+//  NSObject+DicToModels.m
 //  SDWebLearning
 //
-//  Created by 沛沛 on 2018/5/16.
+//  Created by 沛沛 on 2018/5/28.
 //  Copyright © 2018年 沛沛. All rights reserved.
 //
 
-#import "NSObject+DicToModel.h"
+#import "NSObject+DicToModels.h"
 #import <objc/runtime.h>
 
-@implementation NSObject (DicToModel)
+@implementation NSObject (DicToModels)
 //利用kvc的字典转模型1，直接转模型，遇到不匹配的key时直接走-(void)setValue:(id)value forUndefinedKey:(NSString *)key
 //利用kvc的字典转模型2，直接转模型，遇到不匹配的key时重写setValue forKey:的方法
 +(instancetype)getModelByKVC:(NSDictionary*)dic{
@@ -47,7 +47,8 @@
                 value = dict[keyName];
             }
         }
-        [objc setValue:value forKeyPath:ivarName];
+        
+        if(value) [objc setValue:value forKeyPath:ivarName];
     }
     return objc;
 }

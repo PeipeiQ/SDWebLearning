@@ -8,8 +8,8 @@
 
 #import "RuntimeController.h"
 #import <objc/runtime.h>
-#import "BaseModel.h"
-#import "NSObject+DicToModel.h"
+
+
 
 @interface RuntimeController ()
 @property(nonatomic,copy) NSDictionary *dataDic;
@@ -36,9 +36,9 @@
     [self getPropertyByRuntimeWith:NSClassFromString(@"FirstModel")];
     [self getIVarByRuntimeWith:NSClassFromString(@"FirstModel")];
     FirstModel *model = [[FirstModel alloc]init];
-    model = [FirstModel getModelByKVC:self.dataDic];
-    //model = [FirstModel objcWithDict:self.dataDic mapDict:@{@"ID":@"id"}];
-    NSLog(@"%@,%@,%@,%@",model.name,model.cars,model.age,model.ID);
+    //model = [FirstModel getModelByKVC:self.dataDic];
+    model = [FirstModel objcWithDict:self.dataDic mapDict:@{@"ID":@"id"}];
+    NSLog(@"%@,%@,%@,%@,%f",model.name,model.cars,model.age,model.ID,model.contentHeight);
 }
 
 //runtime应用一：字典转模型
