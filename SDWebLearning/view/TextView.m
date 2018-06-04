@@ -11,7 +11,6 @@
     CGRect _frame;
 }
 @property(nonatomic,strong) NSString *title;
-@property(nonatomic,strong) UITextField *textField;
 @end
 
 @implementation TextView
