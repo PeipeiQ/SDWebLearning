@@ -54,6 +54,10 @@
     [self.view addSubview:btn1];
     [self.view addSubview:btn3];
     [self.view addSubview:btn4];
+    
+    UIImageView *imgView = [[UIImageView alloc]initWithFrame:CGRectMake(100, 400, 50, 50)];
+    [imgView sd_setImageWithURL:[NSURL URLWithString:@"https://images2018.cnblogs.com/news/24442/201806/24442-20180611171134854-1629599186.jpg"]];
+    [self.view addSubview:imgView];
 //    [self.view addSubview:btn5];
 }
 

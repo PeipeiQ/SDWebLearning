@@ -383,6 +383,7 @@ forHTTPHeaderField:(NSString *)field
 
     __block AFStreamingMultipartFormData *formData = [[AFStreamingMultipartFormData alloc] initWithURLRequest:mutableRequest stringEncoding:NSUTF8StringEncoding];
 
+    //formdata的处理
     if (parameters) {
         for (AFQueryStringPair *pair in AFQueryStringPairsFromDictionary(parameters)) {
             NSData *data = nil;
@@ -462,7 +463,7 @@ forHTTPHeaderField:(NSString *)field
 }
 
 #pragma mark - AFURLRequestSerialization
-
+//request默认情况
 - (NSURLRequest *)requestBySerializingRequest:(NSURLRequest *)request
                                withParameters:(id)parameters
                                         error:(NSError *__autoreleasing *)error
@@ -1234,6 +1235,7 @@ typedef enum {
 
 #pragma mark - AFURLRequestSerialization
 
+//request是json的情况
 - (NSURLRequest *)requestBySerializingRequest:(NSURLRequest *)request
                                withParameters:(id)parameters
                                         error:(NSError *__autoreleasing *)error
@@ -1295,6 +1297,7 @@ typedef enum {
 
 #pragma mark -
 
+//request是plist的情况
 @implementation AFPropertyListRequestSerializer
 
 + (instancetype)serializer {

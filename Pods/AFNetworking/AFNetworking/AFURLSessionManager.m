@@ -258,6 +258,7 @@ didCompleteWithError:(NSError *)error
     __block id responseObject = nil;
 
     __block NSMutableDictionary *userInfo = [NSMutableDictionary dictionary];
+    
     userInfo[AFNetworkingTaskDidCompleteResponseSerializerKey] = manager.responseSerializer;
 
     //Performance Improvement from #2672
@@ -289,6 +290,8 @@ didCompleteWithError:(NSError *)error
     } else {
         dispatch_async(url_session_manager_processing_queue(), ^{
             NSError *serializationError = nil;
+            
+            //工厂方法，返回不同的responseSerializer实例。可以实现不同的方法
             responseObject = [manager.responseSerializer responseObjectForResponse:task.response data:data error:&serializationError];
 
             if (self.downloadFileURL) {
@@ -524,7 +527,10 @@ static NSString * const AFNSURLSessionTaskDidSuspendNotification = @"com.alamofi
     self.operationQueue.maxConcurrentOperationCount = 1;
 
     self.session = [NSURLSession sessionWithConfiguration:self.sessionConfiguration delegate:self delegateQueue:self.operationQueue];
-
+    
+    /********************/
+    /*默认的响应的序列化方式*/
+    /********************/
     self.responseSerializer = [AFJSONResponseSerializer serializer];
 
     self.securityPolicy = [AFSecurityPolicy defaultPolicy];
@@ -619,6 +625,8 @@ static NSString * const AFNSURLSessionTaskDidSuspendNotification = @"com.alamofi
              completionHandler:(void (^)(NSURLResponse *response, id responseObject, NSError *error))completionHandler
 {
     AFURLSessionManagerTaskDelegate *delegate = [[AFURLSessionManagerTaskDelegate alloc] init];
+    
+    //将两个类关联起来的关键代码，把urlssion的实例传过去
     delegate.manager = self;
     delegate.completionHandler = completionHandler;
 

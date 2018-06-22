@@ -93,6 +93,8 @@ typedef NS_ENUM(NSUInteger, AFHTTPRequestQueryStringSerializationStyle) {
 
  Any request or response serializer dealing with HTTP is encouraged to subclass `AFHTTPRequestSerializer` in order to ensure consistent default behavior.
  */
+
+////////1、默认
 @interface AFHTTPRequestSerializer : NSObject <AFURLRequestSerialization>
 
 /**
@@ -380,6 +382,7 @@ forHTTPHeaderField:(NSString *)field;
 /**
  `AFJSONRequestSerializer` is a subclass of `AFHTTPRequestSerializer` that encodes parameters as JSON using `NSJSONSerialization`, setting the `Content-Type` of the encoded request to `application/json`.
  */
+//////////2、请求的数据格式是json
 @interface AFJSONRequestSerializer : AFHTTPRequestSerializer
 
 /**
@@ -401,6 +404,9 @@ forHTTPHeaderField:(NSString *)field;
 /**
  `AFPropertyListRequestSerializer` is a subclass of `AFHTTPRequestSerializer` that encodes parameters as JSON using `NSPropertyListSerializer`, setting the `Content-Type` of the encoded request to `application/x-plist`.
  */
+
+
+/////////////3
 @interface AFPropertyListRequestSerializer : AFHTTPRequestSerializer
 
 /**

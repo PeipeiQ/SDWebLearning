@@ -85,6 +85,7 @@ static id AFJSONObjectByRemovingKeysWithNullValues(id JSONObject, NSJSONReadingO
     return JSONObject;
 }
 
+//不进行解析，直接返回data
 @implementation AFHTTPResponseSerializer
 
 + (instancetype)serializer {
@@ -232,10 +233,12 @@ static id AFJSONObjectByRemovingKeysWithNullValues(id JSONObject, NSJSONReadingO
 
 #pragma mark - AFURLResponseSerialization
 
+//默认走这一个方法，进行json解析
 - (id)responseObjectForResponse:(NSURLResponse *)response
                            data:(NSData *)data
                           error:(NSError *__autoreleasing *)error
 {
+    //数据验证
     if (![self validateResponse:(NSHTTPURLResponse *)response data:data error:error]) {
         if (!error || AFErrorOrUnderlyingErrorHasCodeInDomain(*error, NSURLErrorCannotDecodeContentData, AFURLResponseSerializationErrorDomain)) {
             return nil;
@@ -247,6 +250,8 @@ static id AFJSONObjectByRemovingKeysWithNullValues(id JSONObject, NSJSONReadingO
     // Workaround for behavior of Rails to return a single space for `head :ok` (a workaround for a bug in Safari), which is not interpreted as valid input by NSJSONSerialization.
     // See https://github.com/rails/rails/issues/1742
     BOOL isSpace = [data isEqualToData:[NSData dataWithBytes:" " length:1]];
+    
+    //进行转换
     if (data.length > 0 && !isSpace) {
         responseObject = [NSJSONSerialization JSONObjectWithData:data options:self.readingOptions error:&serializationError];
     } else {
@@ -263,6 +268,7 @@ static id AFJSONObjectByRemovingKeysWithNullValues(id JSONObject, NSJSONReadingO
 
     return responseObject;
 }
+
 
 #pragma mark - NSSecureCoding
 
@@ -285,6 +291,7 @@ static id AFJSONObjectByRemovingKeysWithNullValues(id JSONObject, NSJSONReadingO
     [coder encodeObject:@(self.removesKeysWithNullValues) forKey:NSStringFromSelector(@selector(removesKeysWithNullValues))];
 }
 
+//实现对象的拷贝需要实现这个协议
 #pragma mark - NSCopying
 
 - (instancetype)copyWithZone:(NSZone *)zone {

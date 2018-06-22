@@ -53,6 +53,8 @@ NS_ASSUME_NONNULL_BEGIN
 
  Any request or response serializer dealing with HTTP is encouraged to subclass `AFHTTPResponseSerializer` in order to ensure consistent default behavior.
  */
+
+///////1
 @interface AFHTTPResponseSerializer : NSObject <AFURLResponseSerialization>
 
 - (instancetype)init;
@@ -112,6 +114,8 @@ NS_ASSUME_NONNULL_BEGIN
  - `text/json`
  - `text/javascript`
  */
+
+///////2
 @interface AFJSONResponseSerializer : AFHTTPResponseSerializer
 
 - (instancetype)init;
@@ -145,6 +149,8 @@ NS_ASSUME_NONNULL_BEGIN
  - `application/xml`
  - `text/xml`
  */
+
+///////3
 @interface AFXMLParserResponseSerializer : AFHTTPResponseSerializer
 
 @end
@@ -161,6 +167,7 @@ NS_ASSUME_NONNULL_BEGIN
  - `application/xml`
  - `text/xml`
  */
+///////4
 @interface AFXMLDocumentResponseSerializer : AFHTTPResponseSerializer
 
 - (instancetype)init;
@@ -190,6 +197,8 @@ NS_ASSUME_NONNULL_BEGIN
 
  - `application/x-plist`
  */
+
+////////5解析plist
 @interface AFPropertyListResponseSerializer : AFHTTPResponseSerializer
 
 - (instancetype)init;
